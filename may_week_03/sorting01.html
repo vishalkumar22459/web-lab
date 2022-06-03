@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>sorting</title>
+    </head>
+    <body>
+        <script>
+            const n = prompt("enter the size of the array");
+            const a = [];
+            for(let i=0;i<n;i++)
+                a[i] = prompt("enter the elements");
+            document.write("ARRAY BEFORE SORT : ");
+            for(let i=0;i<n;i++)
+                document.write(a[i] + " ");
+                document.write("<BR>");
+            document.write("ARRAY AFTER SORT : ");
+            for(let i=0;i<n;i++)
+            {
+                for(let j=i+1;j<n;j++)
+                {
+                    if(a[i]>a[j])
+                    {
+                        let temp = a[i];
+                        a[i]=a[j];
+                        a[j]=temp;
+                    }
+                }
+            }
+            for(let i=0;i<n;i++)
+                document.write(a[i] + " ");
+        </script>
+    </body>
+</html>
