@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemet insertion</title>
+</head>
+<body>
+    <script>
+        const n=prompt("enter the size of the array");
+        const a=[];
+        for(let i=0;i<n;i++)
+            a[i] = prompt("enter the array elements ");
+        const pos = prompt("enter the position to be inserted");
+        const ele = prompt("enter the element to inserted");
+        document.write("ARRAY BEFORE INSERTION ");
+        for(let i=0;i<n;i++)
+            document.write(a[i]+ " ");
+        document.write("ARRAY AFTER INSERTON ");
+        for(let i=0;i<n;i++)
+        {
+            if(i==pos)
+            {    document.write(ele + " ");
+                i=i-1;
+            }
+            document.write(a[i] + " ");
+        }
+    </script>
+    
+</body>
+</html>
