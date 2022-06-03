@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDENTICAL ARRAY</title>
+</head>
+<body>
+    <script>
+        let count=0;
+        const n1=prompt("enter the size of array 1");
+        const a1 = [];
+        for(let i=0;i<n1;i++)
+            a1[i] = prompt("enter the elements of 1st array");
+       const n2=prompt("enter the size of the 2nd array");
+        const a2=[];
+        for(let i=0;i<n2;i++)
+            a2[i]=prompt("enter the array elements of 2nd array ");
+        if(n1 != n2)
+            document.write("ARRAYS ARE NOT SAME");
+        else
+        {
+            for(let i=0;i<n1;i++)
+            {
+                if(a1[i] == a2[i])
+                {
+                    count ++;
+                }
+            }
+            if(count==n1)
+            {
+                document.write("ARRAYS ARE IDENTICAL");
+            }
+            else
+            {
+                document.write("ARRAYS ARE NOT IDENTICAL");
+            }
+
+        }
+    </script>
+</body>
+</html>
