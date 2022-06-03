@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duplicate removal</title>
+</head>
+<body>
+    <script>
+        const n=prompt("enter the array size");
+        const a=[];
+        for(let i=0;i<n;i++)
+            a[i] = prompt("enter the elements");
+        let min=999,max=0;
+        for(let i=0;i<n;i++)
+        {
+            if(min>a[i])
+                min=a[i];
+            if(max<a[i])
+                max=a[i];
+        }
+        const ar=[];
+        for(let i=0;i<n;i++)
+        {
+            ar[a[i]-min] = a[i];
+        }
+        for(let i=0;i<=(max-min) ;i++)
+        {
+            document.write(ar[i] + " ");
+        }
+    </script>
+    
+</body>
+</html>
