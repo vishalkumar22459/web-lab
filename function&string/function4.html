@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            Weight Check
+        </title>
+    </head>
+    <body>
+        <script>
+            let weightlb = (weightkg) =>
+            {
+                let lbs = weightkg * 2.2;
+                if(lbs > 150)
+                    document.write("OBSES");
+                else if(lbs >=100 && lbs <=150)
+                    document.write("YOU ARE OKK");
+                else 
+                    document.write("UNDER WEIGHT");
+            }
+            weightlb(50);
+        </script>
+    </body>
+</html>
