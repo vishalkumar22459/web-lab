@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>
+            ARROW FUNCTION
+        </title>
+    </head>
+    <body>
+        <script>
+            const array = (a) => {
+            let sum = 0;
+            for(let number of a){
+              sum += number;
+            }
+            return sum/a.length;
+          }
+           
+          let a = [10,20,30,40,50,60,70];
+          document.write(array(a));
+        </script>
+    </body>
+</html>
