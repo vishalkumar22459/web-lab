@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>
+            Functions
+        </title>
+    </head>
+    <body>
+        <script>
+        var fun ="html css node.js function";
+        alert(fun.charAt(3));
+        
+        var char1=prompt("Enter 1st text");
+        var char2=prompt("Enter 2nd text");
+        var mess=char1.concat(char2);
+        alert(mess);
+
+       
+        var char3=prompt("enter the string to find its length : ");
+        var len=char3.length;
+        alert(len);
+
+       
+        var char4=prompt("Enter string for upper case converstion");
+        var aa=char4.toUpperCase();
+        alert(aa);
+
+        
+        var char5=prompt("Enter string for lower case convertion");
+        var mess=char5.toLowerCase();
+        alert(mess);
+
+        
+        var s=prompt("Enter the stringa to slice");
+        var x=(Number(prompt("Enter the number:")));
+        var y=(Number(prompt("Enter the number:")));
+        var mess=s.slice(x,y);
+        alert(mess);
+
+       
+        var t=prompt("Enter the text to get substring:");
+        var m=(Number(prompt("Enter the number:")));
+        var n=(Number(prompt("Enter the number:")));
+        var mess=t.substr(m,n);
+        alert(mess);
+
+        
+        var u=prompt("Enter the text:");
+        var v=prompt("Enter the word you want to replace:");
+        var w=prompt("Enter the replaced word:");
+        var mess=u.replace(v,w);
+        alert(mess)
+        </script>
+    </body>
+</html>
