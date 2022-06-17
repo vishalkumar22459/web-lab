@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            DISARIUM NUMBER
+        </title>
+    </head>
+    <body>
+        <script>
+    function check(n)
+        {
+            var count_digits = Number.toString();
+            var sum = 0; // Initialize sum of terms
+            var x = n;
+            while (x!=0)
+            {
+                var r = x%10;
+                sum = (sum + Math.pow(r, count_digits--));
+                x = x/10;
+            }
+            return (sum = n);
+        }
+    const n = prompt("enter the numer to ");	
+	document.write(check(n) ? "Disarium Number" : "Not a Disarium Number");
+
+        </script>
+    </body>
+</html>
