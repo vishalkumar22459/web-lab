@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+nav ul {
+    list-style-type: none;
+}
+
+nav {
+    background-color: rgb(41, 40, 48);
+    color: rgb(143, 168, 28);
+    height: 70px;
+    font-size: 27px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: "Audiowide", sans-serif;
+}
+
+.button {
+    margin: 0 23px;
+    padding: 1px 18px;
+    background: #0cb645;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "Audiowide", sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    align-items: center;
+}
+
+.gameinfo {
+    background-color: rgb(137, 224, 137);
+}
+
+.gameContainer {
+    background-color: yellowgreen;
+    height: flex;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 70px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: "Audiowide", sans-serif;
+}
+
+.box {
+    border: 2.5px solid red;
+    font-size: 5vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: chartreuse;
+}
+
+.gameinfo {
+    padding: 0 34px;
+    font-family: "Audiowide", sans-serif;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+@media screen and (max-width:800px) {
+    #contents {
+        width: 90%;
+    }
+}
