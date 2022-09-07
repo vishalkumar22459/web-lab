@@ -25,13 +25,6 @@ const check = () => {
             document.querySelector('.info').innerText = boxtext[e[0]].innerText + " Won"
             gameover.play();
             game = 0;
-            let boxtexts = document.querySelectorAll('.boxtext');
-            Array.from(boxtexts).forEach(element => {
-                element.innerText = "";
-            });
-            turn = "X";
-            game = 1;
-            document.getElementsByClassName("info")[0].innerText = "Turn for " + turn;
         }
     })
 }
